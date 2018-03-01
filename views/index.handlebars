@@ -77,7 +77,7 @@
       <h3>RSVP Form</h3>
       <div class="row">
         <div class="col-4">
-          <form id="rsvpForm">
+          <form id="rsvpForm" method="post" action="/rsvp">
             <div class="form-group">
               <label for="rsvpEmail">Email address</label>
               <input required type="email" class="form-control" id="rsvpEmail" aria-describedby="emailHelp" placeholder="Enter email">
@@ -95,7 +95,7 @@
           <div class="row">
             <label for="">Your Photo</label>
             
-           <!--  <div class="col">
+            <div class="col">
               <div id="camera" class="profile" style="max-width: 250px;">
                 <video autoplay id="camera-video"></video>
                 <button id="camera-button" class="btn btn-primary">Take Photo</button>
@@ -105,7 +105,6 @@
             <div class="col">
               <canvas id="camera-canvas"></canvas>
             </div>
-            -->
           </div>
         </div>
       </div>
@@ -113,5 +112,10 @@
       
     </div>
   </div>
+
+
+  <link href="/css/introHCI.css" rel="stylesheet">
+  <script type="text/javascript" src="/js/googleMaps.js"></script>
+  {{> googleMaps}}
 </body>
 </html>
